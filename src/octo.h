@@ -1,6 +1,7 @@
 #include <string>
+#include "Sys.h"
 
-class Octo {
+class OCTOAPI Octo {
 public:
     std::string dame();
 };

@@ -7,7 +7,7 @@ public:
     std::string dame();
 };
 
-class Rotary {
+class OCTOAPI Rotary {
 public:
     Rotary();
     std::string redame();

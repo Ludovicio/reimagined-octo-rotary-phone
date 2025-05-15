@@ -2,5 +2,13 @@
 
 std::string Octo::dame() {
   using namespace std::string_literals;
-  return "blalbsa"s;
+  return "mipan"s;
+}
+
+Rotary::Rotary() {
+  vo.emplace_back();
+}
+
+std::string Rotary::redame() {
+  return vo[0].dame();
 }

@@ -22,7 +22,7 @@ include_directories(include)
 add_library(zbe_core src/DLL.CPP)
 
 IF (WIN32)
-target_compile_definitions(zbe_core PRIVATE EXPIMP_TEMPLATE)
+target_compile_definitions(zbe_core PRIVATE EXP_STL)
 ENDIF()
 
 # Establecer propiedades de la librería (nombre de salida, etc.)

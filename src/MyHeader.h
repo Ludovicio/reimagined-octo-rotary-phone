@@ -15,11 +15,11 @@
 // much safer means of using common declarations than two different
 // header files.
 #ifdef EXP_STL
-#    define DECLSPECIFIER __declspec(dllexport)
-#    define EXPIMP_TEMPLATE
+    #define DECLSPECIFIER __declspec(dllexport)
+    #define EXPIMP_TEMPLATE
 #else
-#    define DECLSPECIFIER __declspec(dllimport)
-#    define EXPIMP_TEMPLATE extern
+    #define DECLSPECIFIER __declspec(dllimport)
+    #define EXPIMP_TEMPLATE extern
 #endif
 
 // Instantiate classes vector<int> and vector<char>

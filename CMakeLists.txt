@@ -19,10 +19,10 @@ include_directories(include)
 
 # Crear la librería
 # add_library(zbe_core ${BUILD_SHARED_LIBS} ${ZBE_SOURCES})
-add_library(zbe_core src/octo.cpp)
+add_library(zbe_core src/DLL.CPP)
 
 IF (WIN32)
-target_compile_definitions(zbe_core PRIVATE OCTO_EXPORTS)
+target_compile_definitions(zbe_core PRIVATE EXPIMP_TEMPLATE)
 ENDIF()
 
 # Establecer propiedades de la librería (nombre de salida, etc.)
@@ -42,7 +42,7 @@ else()
 endif()
 
 add_executable(APIUSER 
-  src/ApiUser.cpp
+  src/EXE.CPP
 )
 target_link_libraries(APIUSER
     PRIVATE zbe_core

@@ -2,7 +2,7 @@
 
 #ifdef _WIN32
  
-template class OCTOAPI std::vector<Octo,std::allocator<Octo>>;
+EXPIMP_TEMPLATE template class OCTOAPI std::vector<Octo>;
 
 #endif // OS
 

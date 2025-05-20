@@ -5,8 +5,10 @@
  
    #ifdef OCTO_EXPORTS
      #define OCTOAPI __declspec(dllexport)
+     #define EXPIMP_TEMPLATE
    #else
      #define OCTOAPI __declspec(dllimport)
+     #define EXPIMP_TEMPLATE extern
    #endif
  
    #define OCTOCALL __cdecl
